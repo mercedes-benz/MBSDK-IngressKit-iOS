@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XRH-Ix-Mtt">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bgy-Aj-MOT">
+            <objects>
+                <viewController id="XRH-Ix-Mtt" customClass="ViewController" customModule="MBRSLogin_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x29-XY-Xxy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="C9e-Rv-roa">
+                                <rect key="frame" x="0.0" y="20" width="320" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYv-jO-MR2">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                        <state key="normal" title="Send Pin"/>
+                                        <connections>
+                                            <action selector="sendPinButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="z6q-Rf-0wd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtB-rQ-PPj">
+                                        <rect key="frame" x="0.0" y="38" width="320" height="30"/>
+                                        <state key="normal" title="Login User"/>
+                                        <connections>
+                                            <action selector="loginUserButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="ZqM-bl-pBL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRK-AD-oMf">
+                                        <rect key="frame" x="0.0" y="75.5" width="320" height="30"/>
+                                        <state key="normal" title="Create User"/>
+                                        <connections>
+                                            <action selector="createUserButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="uJj-O1-5ku"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjb-rd-FWe">
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="30"/>
+                                        <state key="normal" title="Refresh Token"/>
+                                        <connections>
+                                            <action selector="refreshTokenButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="jJK-dq-v1y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuU-va-4ig">
+                                        <rect key="frame" x="0.0" y="151.5" width="320" height="30"/>
+                                        <state key="normal" title="Fetch User"/>
+                                        <connections>
+                                            <action selector="fetchUserButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="8vb-1I-1px"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftR-P7-jG8">
+                                        <rect key="frame" x="0.0" y="189.5" width="320" height="30"/>
+                                        <state key="normal" title="Update User"/>
+                                        <connections>
+                                            <action selector="updateUserButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="UFt-Iu-7BJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmF-wg-Jeg">
+                                        <rect key="frame" x="0.0" y="227" width="320" height="30"/>
+                                        <state key="normal" title="Set pin"/>
+                                        <connections>
+                                            <action selector="setPin:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="Qf8-HL-zZd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZg-dG-Qry">
+                                        <rect key="frame" x="0.0" y="265" width="320" height="30"/>
+                                        <state key="normal" title="Change pin"/>
+                                        <connections>
+                                            <action selector="changePin:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="vZt-U8-1Be"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFG-eP-SU3">
+                                        <rect key="frame" x="0.0" y="303" width="320" height="30"/>
+                                        <state key="normal" title="Delete pin"/>
+                                        <connections>
+                                            <action selector="deletePin:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="8yd-fg-LLF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOl-I2-P1G">
+                                        <rect key="frame" x="0.0" y="340.5" width="320" height="30"/>
+                                        <state key="normal" title="Show Image"/>
+                                        <connections>
+                                            <action selector="showImageButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="GbW-jq-NRn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dA-sF-RlU">
+                                        <rect key="frame" x="0.0" y="378.5" width="320" height="30"/>
+                                        <state key="normal" title="Upload Image"/>
+                                        <connections>
+                                            <action selector="uploadImageButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="InR-7I-Zjg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFl-Vz-eHN">
+                                        <rect key="frame" x="0.0" y="416.5" width="320" height="30"/>
+                                        <state key="normal" title="Countries"/>
+                                        <connections>
+                                            <action selector="countriesButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="aEk-VM-X4f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGs-hJ-4Ad">
+                                        <rect key="frame" x="0.0" y="454.5" width="320" height="30"/>
+                                        <state key="normal" title="Send support message"/>
+                                        <connections>
+                                            <action selector="sendMessageButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="coN-Zf-nJW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-OA-4WW">
+                                        <rect key="frame" x="0.0" y="454.5" width="320" height="30"/>
+                                        <state key="normal" title="Profile Fields"/>
+                                        <connections>
+                                            <action selector="profileFieldsButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="1Ev-BM-ayU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGV-eS-Su6">
+                                        <rect key="frame" x="0.0" y="492" width="320" height="30"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="XRH-Ix-Mtt" eventType="touchUpInside" id="2dn-iA-dMM"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykn-0Y-eKE">
+                                        <rect key="frame" x="0.0" y="530" width="320" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tVQ-W5-KkL">
+                                                <rect key="frame" x="125" y="0.0" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="2Po-vx-dBE"/>
+                                                    <constraint firstAttribute="width" secondItem="tVQ-W5-KkL" secondAttribute="height" multiplier="1:1" id="7x5-Ic-cKW"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="tVQ-W5-KkL" firstAttribute="centerX" secondItem="ykn-0Y-eKE" secondAttribute="centerX" id="m7c-LE-b2M"/>
+                                            <constraint firstItem="tVQ-W5-KkL" firstAttribute="top" secondItem="ykn-0Y-eKE" secondAttribute="top" id="xQT-iZ-Rte"/>
+                                            <constraint firstAttribute="bottom" secondItem="tVQ-W5-KkL" secondAttribute="bottom" id="xy1-Xp-M2a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="C9e-Rv-roa" secondAttribute="bottom" id="4yy-OG-2n5"/>
+                            <constraint firstItem="C9e-Rv-roa" firstAttribute="leading" secondItem="DUL-rF-XTq" secondAttribute="leading" id="Dso-UK-suB"/>
+                            <constraint firstItem="DUL-rF-XTq" firstAttribute="trailing" secondItem="C9e-Rv-roa" secondAttribute="trailing" id="XGu-yU-q2E"/>
+                            <constraint firstItem="C9e-Rv-roa" firstAttribute="top" secondItem="DUL-rF-XTq" secondAttribute="top" id="utB-rl-AUm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DUL-rF-XTq"/>
+                    </view>
+                    <size key="freeformSize" width="320" height="620"/>
+                    <connections>
+                        <outlet property="imageView" destination="tVQ-W5-KkL" id="sVc-QD-h4d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xh-Y0-lLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="109"/>
+        </scene>
+    </scenes>
+</document>
